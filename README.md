@@ -1,1 +1,2 @@
 # microecomisc
+An R package containing a set of functions useful for basic analyiss of microbial ecology data. This is no-frills code, designed to provide rapid handing of read count data. Input is a matrix that is assumed to have row and column names that link to annotations and metadata, respectively. Makes use of the an internal function from R/phyloseq called \textt{rarefaction_subsample}. There are functions for counting NA/zeros/non-detects, subsampling columns of a matrix to uniform depth, double centering a marix and perfomring PCA. Agnostic to 
