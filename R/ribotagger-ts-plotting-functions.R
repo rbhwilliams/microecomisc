@@ -1,5 +1,6 @@
 #--some functions for plotting RiboTagger time series data
 #--this file by RW on 17 October 2017
+#--IAU workshop participants: please download this file, and use 'source(file="<this file name>") to load these functions into your workspace
 
 calculate.relative.abudance.within.samples<-function(m)
 {
@@ -16,6 +17,7 @@ calculate.relative.abudance.within.samples<-function(m)
 
 plot.series<-function(xdata,expMat,annoMat,fileName="panel.pdf")
 {
+ #--some example plots from RiboTagger .xls output files (can also be used for 16S amp seq data with same format)
  #--this function does not assume that the row order of expMat and annoMat are the same; rows are selected by rowname
  pdf(file=fileName)
  for(c in (1:nrow(expMat)))
